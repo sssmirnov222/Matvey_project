@@ -1,0 +1,17 @@
+/* 1 rem = 16 px */
+.PopUp {
+    width: 61.875rem;
+    height: 40rem;
+    background: #FFCA8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.PopUp__Form {
+    display: flex;
+    flex-direction: column;
+}
+.h4 {
+    font-size: 36px;
+}
