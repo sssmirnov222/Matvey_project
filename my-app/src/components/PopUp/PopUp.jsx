@@ -3,8 +3,8 @@ import './PopUp.css';
 
 export default function PopUp() {
 const [typeWebSite, setTypeWebSite] = React.useState('');
-const [design, setDesign] = React.useState();
-const [adaptability, setAdaptability] = React.useState();
+const [design, setDesign] = React.useState('');
+const [adaptability, setAdaptability] = React.useState('');
 
 
 function changeInputWebSite(e) {
@@ -19,12 +19,11 @@ function changeInputDesign(e) {
     setAdaptability(e.target.value)
  }
 
- function submitForm(value) {
+ function submitForm(e) {
+    e.preventDefault();
     let data = [typeWebSite,design,adaptability]
    
-console.log(value)
-// e.preventDefault
-   return 
+console.log(data)
  }
  
     return (
