@@ -1,10 +1,12 @@
 import React from 'react'
 import './PopUp.css';
+// import img from '../image/image_exit.jpg'
 
 export default function PopUp() {
 const [typeWebSite, setTypeWebSite] = React.useState('');
 const [design, setDesign] = React.useState('');
 const [adaptability, setAdaptability] = React.useState('');
+const [exit, setExit] = React.useState(true);
 
 
 function changeInputWebSite(e) {
@@ -27,8 +29,10 @@ console.log(data)
  }
  
     return (
-        <div className='PopUp'>
-            
+     <>
+      {exit && (<div className= 'PopUp'>
+            <div className='PopUp__Exit' onClick={() => setExit(false)}><button>✕</button></div>    
+
             <form action="" className='PopUp__Form' onSubmit={submitForm}>
 
                 <h4 className='PopUp__h4'>Расчёт стоимости</h4>
@@ -50,9 +54,11 @@ console.log(data)
                     <input type="text" placeholder='Под мобильные устройства' value = {adaptability} onChange={(e) => changeInputAdaptability(e)}/>
                 </label>
 
-                <button type='submit' className='PopUp__Button'>Отправить</button>
+                <button type='submit' className='PopUp__Button' >Отправить</button>
             </form>
-            
-        </div>
+
+              
+        </div>)}
+        </> 
     )
 }

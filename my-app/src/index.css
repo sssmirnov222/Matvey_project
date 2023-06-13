@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: Raleway;
+  font-family: "Raleway-Medium";
   font-style: normal;
-  font-weight: 400;
-  src:url(./components/fonts/Raleway-Regular.ttf)
+  font-weight: 500;
+  src:url(./components/fonts/Raleway-Medium.ttf)
 }
+@font-face {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src:url(./components/fonts/Raleway-Bold.ttf)
+}
+
 
 body {
   margin: 0;
