@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import PopUp from './components/PopUp/PopUp';
+import Base from '../components/base/Base';
 
 function App() {
   return (
