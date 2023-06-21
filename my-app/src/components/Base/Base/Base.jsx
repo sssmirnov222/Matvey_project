@@ -8,6 +8,7 @@ import development from '../../../image/development.png'
 import one from '../../../image/portfolio_one.png'
 import two from '../../../image/portfolio_two.png'
 
+
 export default function Base() {
    return(
     <div className='Base'>
@@ -41,29 +42,19 @@ export default function Base() {
                 решение технических проблем и т.д.) <br />
                Если вы ищете талантливого, молодого, перспективного разработчика, имеющего <br />
                 огромное желание развиваться в IT-сфере, вам следует обратиться ко мне.</p>
-
           </section>
-
-              {/* <div className='divs'>
-                     <div className='div_one'></div>
-                     <div className='div_two'></div>
-              </div>   */}
 
 
             <section className='task'>
-
                <div className='img_taskBase'>
-
                    <article className='task_Base'>
-
-                  <h3>Моя задача</h3>
-                  <p>Основное направление - frontend <br />
-                   разработка и поддержка сайтов <br /> 
-                   Я предоставляю вам качественные <br />
-                   услуги по разумным ценам
-                  </p>
-                  <button>Мои работы</button>
-
+                      <h3>Моя задача</h3>
+                      <p>Основное направление - frontend <br />
+                       разработка и поддержка сайтов <br /> 
+                       Я предоставляю вам качественные <br />
+                       услуги по разумным ценам
+                      </p>
+                      <button>Мои работы</button>
                    </article>
 
                   <img src={task} alt="" />
@@ -181,19 +172,105 @@ export default function Base() {
             </div>
          </section>
 
+
+
          <section className='calculation_Base'>
-            <h3>Расчёт стоимости</h3>
-            <h5>Помогу вам с предвартельным расчётом стоимости</h5>
+                  <h4 className='Calculation__h4'>Расчёт стоимости</h4>
 
-            <div>
-               
-            </div>
+                  <h5 className='Calculation__h5'>Помогу вам с предварительным расчётом стоимости</h5>
+           
+            <form action="" className='Calculation__Form'>
 
+                  <label className='Calculation__typeWebSite'>
+                      <span>Тип сайта</span>
+                      <input type="text" placeholder='Коммерческий'/>
+                 </label>
+
+                 <label className='Calculation__Design'>
+                     <span>Дизайн</span>
+                     <input type="text" placeholder='Минимализм'/>
+                </label>
+
+                 <label className='Calculation__Adaptability'>
+                    <span>Адаптивность</span>
+                    <input type="text" placeholder='Под мобильные устройства'/>
+                </label>
+               </form>
+         </section>
+
+           
+         <section className="reviews">
+           <h3>Отзывы клиентов</h3> 
+
+           <section className='reviews_people'>
+            <article>
+               <h4>Наталья <br />
+                 Заведующий  <br />
+                 МБДОУ №14</h4>
+               <p>Сотрудничаю с Матвеем <br />
+               недавно, но за короткий срок <br />
+               помог с раскруткой группы. В <br />
+               планах создание сайта. <br />
+               Понравилось, что учитывает <br />
+               ВСЕ пожелания клиента,<br />
+               разъясняет кучу непонятных <br />
+               мне моментов, за что отдельное спасибо :)</p>
+
+            </article>
+
+
+            <article>
+               <h4>Ирина <br />
+               Директор ООО <br />
+                "ТурСистемы"</h4>
+               <p>Заказывала здесь доработку <br />
+               сайта, в том числе и форму с <br />
+               несколькими фильтрами. <br />
+               Сделал очень качественно и <br />
+               недорого, что очень важно.
+              </p>
+
+            </article>
+
+
+            <article>
+               <h4>Сергей <br />
+               Ген. директор ООО <br />
+              "ТермоБетон"</h4>
+               <p>Такой активный сотрудник <br />
+               любит и получает <br />
+               удовольствие от работы,<br />
+               собираюсь нанять его снова <br />
+               для следующего проекта.</p>
+
+            </article>
+           </section>
          </section>
        </main>
 
-       <footer>
+       <footer className='contact'>
 
+          <section className='my_contact'>
+            <h1>Мои контакты</h1>
+            <p>С радостью отвечу на ваши вопросы <br />
+            Вы можете использовать форму <br />
+            ниже или написать по адресу</p>
+            <p>popov.matvey.s62@gmail.com</p>
+            <p>+7-(915)-627-38-29</p>
+          </section>
+
+          <div className='input'>
+            <section className='contact_input'>
+             <input type="text" placeholder='Имя'/>
+             <input type="text" placeholder='Email' />
+          </section>
+
+          <section className='SMS_input' >
+             <input type="text" placeholder='Сообщение' />
+          </section>
+          </div>
+          
+         
        </footer>
     </div>
    ) 
