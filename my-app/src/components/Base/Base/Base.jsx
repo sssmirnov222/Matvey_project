@@ -48,6 +48,7 @@ export default function Base() {
             <section className='task'>
                <div className='img_taskBase'>
                    <article className='task_Base'>
+
                       <h3>Моя задача</h3>
                       <p>Основное направление - frontend <br />
                        разработка и поддержка сайтов <br /> 
@@ -55,10 +56,12 @@ export default function Base() {
                        услуги по разумным ценам
                       </p>
                       <button>Мои работы</button>
+
                    </article>
 
                   <img src={task} alt="" />
-                  </div>
+
+               </div>
             </section>
 
             <section className='services'>
