@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import './Base.css';
 
-import { NavLink } from "react-router-dom";
+
 import task from '../../../image/task.png'
 import CEO from '../../../image/CEO.png'
 import web from '../../../image/web-design.png'
@@ -13,7 +13,11 @@ import two from '../../../image/portfolio_two.png'
 
 export default function Base() {
 
-   const scrollref = useRef();
+   // <Routers>
+   //    <Route>
+
+   //    </Route>
+   // </Routers>
          
    return(
     <div className='Base'>
@@ -21,7 +25,7 @@ export default function Base() {
         
          <nav className='navigation_Base'>
                 <p>MATVEY POPOV</p>
-                <NavLink to="">ОБО МНЕ</NavLink>
+                <a href="">ОБО МНЕ</a>
                 <a href="">УСЛУГИ</a>
                 <a href="">ПОРТФОЛИО</a>
                 <a href="">РАСЧЁТ СТОИМОСТИ</a>
